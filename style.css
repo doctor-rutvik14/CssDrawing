@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.face{
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+}
+.face .muh{
+    top: -45px;
+    left: 75px;
+    position: absolute;
+    height: 160px;
+    width: 170px;
+    background-color: yellow;
+    border-radius: 50%;
+    /* border-radius: 51% 49% 50% 50% / 57% 58% 42% 43%; */
+    border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%  ;
+    border: 1px solid black;
+    transform: scale(1.1) rotate(0deg) ;
+}
+.container{
+    position: absolute;
+    height: 500px;
+    width: 700px;
+    /* background-color: aliceblue; */
+}
+.container .ear1, .container .ear2{
+    background-color: black;
+    position: absolute;
+    top: -97px;
+    height: 100px;
+    width: 35px;
+    border-radius: 75%;
+    left: 27px;
+}
+.container .ear1 .earshape1, .container .ear2 .earshape2{
+    background-color: yellow;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    height: 80%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+}
+.container .ear1{
+    transform: rotate(-45deg) scale(1.3);
+}
+.container .ear2{
+    left: 267px;
+    transform: rotate(45deg) scale(1.3);
+}
+.container .ear2 .earshape2{
+    left: -2px;
+}
+.container .eye1, .container .eye2{
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+.container .eye1{
+    left: 100px;
+}
+.container .eye2{
+    left: 200px;
+}
+.container .eye1 .shade1,.container .eye2 .shade3{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10%;
+    height: 50%;
+    width: 41%;
+    border-radius: 50%;
+}
+.container .eye1 .shade1{
+    left:9px;
+}
+.container .eye2 .shade3{
+    right:9px;
+}
+.container .eye2{
+    left: 200px;
+}
+.container .eye1 .shade2,.container .eye2 .shade4{
+    position: absolute;
+    top: 10px;
+    height: 10px;
+    width: 18px;
+    border-radius: 50%;
+    border-bottom: 2px solid rgb(99, 50, 17);
+}
+.container .eye1 .shade2{
+    left:4px;
+}
+.container .eye2 .shade4{
+    right:4px;
+}
+.container .eye2{
+    left: 200px;
+}
+.container .eye2{
+    left: 200px;
+}
+.container .nose{
+    position: absolute;
+    border-radius: 37% 63% 83% 17% / 37% 17% 83% 63%;
+    height: 125px;
+    width: 125px;
+    background-color: black;
+    transform: rotate(225deg) scale(0.07);
+    left: 100px;
+    top: -25px;
+}
+.container .mouth1,.container .mouth2{
+    position: absolute;
+    width: 28px;
+    top: 52px;
+    height: 16px;
+    border-radius: 100%;
+    border-bottom: 3px solid black
+}
+.container .mouth1{
+    left: 136px;
+}
+.container .mouth2{
+    left: 164px;
+}
+.container .blush1,.container .blush2{
+    position: absolute;
+    width: 24px;
+    top: 50px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: rgb(255, 0, 85);
+}
+.container .blush1{
+    left: 68px;
+}
+.container .blush2{
+    left: 220px;
+}
+.foot1, .foot2{
+    z-index: -3;
+    background-color:yellow;
+    border: 1px solid black;
+    position:absolute;
+    top:420px;
+    height:60px;
+    width:37px;
+    border-radius:80%;
+}
+.foot1{
+    left:255px;
+    transform:rotate(-150deg);
+}
+.foot2{
+    left:380px;
+    transform:rotate(150deg);
+}
+.stripes, .stripes1, .stripes2, .stripes3{
+    position: absolute;
+    height: 20px;
+    width: 1px;
+    top: 2px;
+    left: 10px;
+    background-color: black;
+}
+.stripes1{
+    height: 16px;
+    left: 22px;
+}
+.stripes2{
+    height: 16px;
+    left: 10px;
+}
+.stripes3{
+    height: 20px;
+    left: 22px;
+}
+.tail1, .tail2, .tail3{
+    background-color: yellow;
+    position:absolute;
+    left: -300px;
+}
+.hand1{
+    background-color: #E5961D;
+    position: absolute;
+    border: none;
+    top:200px;
+    left:200px;
+    height:85px;
+    width:30px;
+    border-radius:20px 20px 0 0;
+    transform: rotate(135deg);
+}
+.hand1:after {
+    background: linear-gradient(-45deg, #fff8e0 16px,transparent 0), linear-gradient(45deg, #fff8e0  16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 8px 75px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+}
+.hand2{
+    background-color: #E5961D;
+    position: absolute;
+    border: none;
+    top:260px;
+    left:390px;
+    height:85px;
+    width:30px;
+    border-radius:20px 20px 0 0;
+    transform: rotate(8deg);
+}
+.hand2:after {
+    background: linear-gradient(-45deg, yellow 16px, transparent 0), linear-gradient(45deg, yellow 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 8px 75px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+}
+.tail1{
+    z-index: -2;
+    background-color:#E5961D;
+    top:340px;
+    left:440px;
+    height:30px;
+    width:34px;
+    transform:skew(-60deg);
+}
+.tail2{
+    top:290px;
+    left:460px;
+    height:45px;
+    width:28px;
+    transform:skew(19deg) scale(1.3); 
+    border-radius:0 0 7px 7px;
+}
+.tail3{
+    top:230px;
+    left:497px;
+    height:50px;
+    width:55px;
+    transform:skew(-60deg) scale(1.4);
+    border-radius:0 0 15px 20px;
+}
+.belly{
+    z-index: -1;
+    background-color:#E5961D;
+    position:absolute;
+    top:180px;
+    left:235px;
+    border-radius:7px 6px 6px 6px;
+    position: absolute;
+    height: 250px;
+    width: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    /* border-radius: 51% 49% 50% 50% / 57% 58% 42% 43%; */
+    border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%  ;
+    border: 1px solid black;
+    transform: scale(1.1) rotate(0deg) ;
+}
