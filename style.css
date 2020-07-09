@@ -25,7 +25,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
     position: absolute;
     height: 160px;
     width: 170px;
-    background-color: yellow;
+    background-color: #FAD61D;
     border-radius: 50%;
     /* border-radius: 51% 49% 50% 50% / 57% 58% 42% 43%; */
     border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%  ;
@@ -48,7 +48,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
     left: 27px;
 }
 .container .ear1 .earshape1, .container .ear2 .earshape2{
-    background-color: yellow;
+    background-color:#FAD61D;
     position: absolute;
     top: 30px;
     left: 2px;
@@ -158,7 +158,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 }
 .foot1, .foot2{
     z-index: -3;
-    background-color:yellow;
+    background-color:#FAD61D;
     border: 1px solid black;
     position:absolute;
     top:420px;
@@ -195,7 +195,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
     left: 22px;
 }
 .tail1, .tail2, .tail3{
-    background-color: yellow;
+    background-color: #FAD61D;
     position:absolute;
     left: -300px;
 }
@@ -235,7 +235,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
     transform: rotate(8deg);
 }
 .hand2:after {
-    background: linear-gradient(-45deg, yellow 16px, transparent 0), linear-gradient(45deg, yellow 16px, transparent 0);
+    background: linear-gradient(-45deg, #FAD61D 16px, transparent 0), linear-gradient(45deg, #FAD61D 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
     background-size: 8px 75px;
@@ -282,7 +282,7 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
     position: absolute;
     height: 250px;
     width: 200px;
-    background-color: yellow;
+    background-color: #FAD61D;
     border-radius: 50%;
     /* border-radius: 51% 49% 50% 50% / 57% 58% 42% 43%; */
     border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%  ;
